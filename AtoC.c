@@ -204,7 +204,6 @@ traces->kin_arrays[6][0]=inpdata->K3;
 traces->kin_arrays[7][0]=inpdata->K4;
 traces->kin_arrays[8][0]=inpdata->K5;
 
-//not sure what this does
 //traces->kin_arrays[4][0]=traces->kin_arrays[2][0]=0.0;
 
 for (i=1; i<inpdata->array_size; ++i)
