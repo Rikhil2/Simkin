@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//just remember to import correct file then bug goes away: name file: AtoC.par type of txt file; can change to txt and change code too
 #include <math.h>
 #include <stdlib.h>
 #include <mem.h>
@@ -104,19 +104,17 @@ fgets(buffer, 500, inpfile);
 sscanf(buffer, "%lf", &(inpdata->K4));
 
 
-/*
+
 fgets(buffer, 500, inpfile);
 sscanf(buffer, "%lf", &(inpdata->K5));
-*/
-/*
+
+
 inpdata->K1=vc(inpdata->comp_num);
 inpdata->K2=vc(inpdata->comp_num);
 inpdata->K3=vc(inpdata->comp_num);
 inpdata->K4=vc(inpdata->comp_num);
 inpdata->K5=vc(inpdata->comp_num);
-*/
-//just in case; I did it manually
-/*
+
 for (i=0; i<inpdata->comp_num; ++i)
     {
     fgets(buffer, 500, inpfile);
@@ -166,7 +164,7 @@ for (i=0; i<inpdata->react_num; ++i)
     fgets(buffer, 500, inpfile);
     sscanf(buffer, "%lf", &(inpdata->K5[i]));
     }
-*/
+
 fclose(inpfile);
 
 return(1);
